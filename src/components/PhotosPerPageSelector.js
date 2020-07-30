@@ -12,7 +12,7 @@ function PhotosPerPageSelector () {
   useEffect(() => {
     resetSelection()
     queryCache.invalidateQueries('photos')
-  }, [state.photosPerPage])
+  }, [state.photosPerPage]) // eslint-disable-line
 
   return (
     <Selector

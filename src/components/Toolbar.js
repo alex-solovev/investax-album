@@ -27,7 +27,6 @@ function Toolbar ({ toggleModal }) {
           <>
             <button
               className='button'
-              role='button'
               onClick={handleDeletePhotos}
               disabled={status === 'loading'}
             >
@@ -41,7 +40,7 @@ function Toolbar ({ toggleModal }) {
             <span className='button-divider' />
           </>
         )}
-        <button className='button' role='button' onClick={toggleModal}>
+        <button className='button' onClick={toggleModal}>
           <SVGIcon name='upload' />
           <span className='button__text'>Upload</span>
         </button>

@@ -11,7 +11,7 @@ function PhotoPreview ({ data }) {
     return () => {
       URL.revokeObjectURL(objectURL)
     }
-  }, [])
+  }, []) // eslint-disable-line
 
   return <Photo data={{ ...data, raw: preview }} />
 }
